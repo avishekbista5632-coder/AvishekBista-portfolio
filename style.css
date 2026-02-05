@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background: #0a1f33;
+    color: #111;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+/* Particle Background Canvas */
+#particle-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.section,
+.content-box,
+.horizontal-scroll-wrapper {
+    background: transparent; /* no other backgrounds */
+}
+/* ===== Top Bar ===== */
+.top-bar {
+    background: #000;
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.name::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 110%;
+    height: 3px;
+
+    background: linear-gradient(to right, #0a1f33,#093f4e, #ffffff);
+
+    
+}
+
+
+/* ===== Info Container (the BIG white rounded bar) ===== */
+/* Wrapper creates space from top bar */
+.info-wrapper {
+    margin-top: 45px;              /* SPACE you asked for */
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+
+/* White rounded container */
+.info-pills {
+    display: flex;
+    align-items: center;
+    background: #939393;
+    padding: 10px 18px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 500px;   /* same as content */
+    justify-content: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Content items */
+.pill {
+    font-size: 13px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+/* Day / Night icon */
+/* .day-night {
+    font-size: 16px;
+} */
+/* Time dark chip */
+#clock {
+    background: #939393;
+    color: #000000;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* Vertical separators */
+.separator {
+    width: 0;
+    height: 20px;
+    border-left: 2px solid #000;
+    margin: 0 14px;
+    opacity: 0.85;
+}
+
+
+
+
+/* ===== Hero ===== */
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 40px;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile-card h1 {
+    margin: 10px 0;
+}
+
+.profile-card h3 {
+    font-weight: 500;
+    color: #555;
+}
+
+.desc {
+    margin-top: 15px;
+    color: #444;
+}
+
+/* ===== Sections ===== */
+.section {
+    padding: 40px 20px;
+    background: transparent;
+}
+
+
+
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ===== Projects ===== */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.project-card {
+    background: #fff;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 8px;
+    padding: 8px 14px;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.content-box {
+    max-width: 1400px;
+    width: 95%;
+    margin: 40px auto;
+
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 18px;
+
+    box-shadow: none;
+}
+
+/* ===== Projects Area Background ===== */
+
+
+
+.content-box.alt {
+    background: #f2f5f8;
+}
+/* ===== Contact ===== */
+/* ===== Contact Section Outer ===== */
+.contact-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* White Card Container */
+.contact-container {
+    background: #f3f3f3;
+    padding: 50px 40px;
+    border-radius: 18px;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.contact-container h2 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Dark Inner Panel */
+.contact-panel {
+    background: #071d33;
+    padding: 30px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 320px;
+    margin: auto;
+}
+.contact-btn {
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Individual Colors */
+.contact-btn.email {
+    background: #3949ab;
+}
+
+.contact-btn.phone {
+    background: #4caf50;
+}
+
+.contact-btn.linkedin {
+    background: #8fb6df;
+    color: #000;
+}
+
+.contact-btn.cv {
+    background: #f4d03f;
+    color: #000;
+    width: 200px;
+    align-self: center;   /* centers inside flex column */
+    text-align: center;
+}
+
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* ===== Footer ===== */
+.footer {
+background: #000; color: #ccc; text-align: center; padding: 20px;
+}
+
+.footer-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-role {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-socials a {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #767676;
+}
+
+/* ===== Horizontal Scroll Wrapper ===== */
+.horizontal-scroll-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Keep container from stretching */
+    width: 100%;
+    max-width: 100%; /* control the visible width */
+    margin: auto;
+}
+
+/* Projects scroll horizontally */
+.horizontal-scroll-wrapper .projects {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* horizontal scroll */
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+/* Prevent the container from stretching */
+.project-card {
+    flex: 0 0 auto; /* FIX: don’t shrink or grow, keep fixed width */
+    width: 280px;   /* size of one project card */
+}
+
+/* Hide scrollbars */
+.horizontal-scroll-wrapper .projects::-webkit-scrollbar {
+    display: none;
+}
+.horizontal-scroll-wrapper .projects {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 10;
+}
+.scroll-btn.left { left: 0; }
+.scroll-btn.right { right: 0; }
+
+.scroll-btn:hover { background: rgba(0,0,0,0.9); }
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.btn .icon {
+    font-size: 16px;
+}
+
+/* Live button style */
+.btn.live {
+    background: #28a745; /* Green */
+    color: #fff;
+}
+
+.btn.live:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+/* GitHub button style */
+.btn.github {
+    background: #24292f; /* GitHub dark gray */
+    color: #fff;
+}
+
+.btn.github:hover {
+    background: #0d1117;
+    transform: translateY(-2px);
+}
+.btn.behance {
+    background: #678cb9; /* GitHub dark gray */
+    color: #fff;
+}
+
+.btn.behance:hover {
+    background: #5a7ca0;
+    transform: translateY(-2px);
+}
+/* Dark background inside white box */
+.projects-bg {
+    background: #0a1f33;       /* matches body */
+    padding: 20px 0;           /* optional vertical padding */
+    margin: 0 -30px;           /* stretch horizontally to edges of content-box padding */
+}
+
+/* Ensure horizontal scroll works normally */
+.projects-bg .horizontal-scroll-wrapper {
+    max-width: 100%;
+    margin: auto;
+}
+.contact-item {
+    width: 100%;
+}
+.contact-panel button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    width: 100%;
+}
+
+.expand-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: #0a1f33;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.expand-content.active {
+    max-height: 300px;
+    padding: 15px;
+}
+
+.expand-content input,
+.expand-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.send-btn {
+    background: #28a745;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.projects-bg,
+.contact-panel,
+.expand-content {
+    position: relative;
+    overflow: hidden;
+}
+.projects-bg::before,
+.contact-panel::before,
+.expand-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 0;
+}
+.projects-bg > *,
+.contact-panel > *,
+.expand-content > * {
+    position: relative;
+    z-index: 2;
+}
+/* Keep UI above particles */
+.top-bar,
+.info-wrapper,
+.footer,.profile-card {
+    position: relative;
+    z-index: 5; /* footer already has this */
+}
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 10px auto;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 2px solid #0a1f33;
+    font-size: 14px;
+}
+
+.suggestions-list {
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none; /* hidden by default */
+    position: relative;
+    z-index: 20;
+}
+
+.suggestions-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.suggestions-list li:hover {
+    background: #a09e9e;
+}
+.no-results {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+.no-results span {
+    font-size: 26px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+

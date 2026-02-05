@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Node / frontend (future-proof)
+node_modules/
+
+# Python (if backend added later)
+__pycache__/
+*.pyc
+
+# Build / cache folders
+dist/
+.cache/
+
+# Temporary files
+*.tmp
+*.swp

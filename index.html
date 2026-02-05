@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avishek Bista | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="particle-bg"></canvas>
+<!-- ===== Top Bar ===== -->
+<header class="top-bar">
+    <span class="name">AVISHEK BISTA</span>
+</header>
+
+<!-- STATUS BAR -->
+<div class="info-wrapper">
+    <div class="info-pills">
+
+        <div class="pill " id="dayNight">☀️</div>
+
+        <div class="separator"></div>
+
+        <div class="pill" id="weather">26°C</div>
+
+        <div class="separator"></div>
+
+        <div class="pill" id="clock">12:12 PM</div>
+
+        <div class="separator"></div>
+
+        <div class="pill" id="location">📍 Kathmandu, Nepal</div>
+
+    </div>
+</div>
+
+<!-- ===== Hero Section ===== -->
+<section class="hero">
+
+    <div class="profile-card">
+        <img src="https://i.pravatar.cc/200" alt="profile"><br><br>
+        <p class="welcome">Welcome to my creative universe</p>
+        <h1>Avishek Bista</h1>
+        <h3> • Web Developer • UI/UX Designer</h3>
+        <p class="desc">
+            I transform ideas into fast, responsive, and visually engaging
+            digital experiences. I focus on clean UI, solid UX, and real-world functionality.
+        </p>
+    </div>
+</section>
+
+<!-- ===== Website Projects ===== -->
+<section class="section">   
+    <div class="content-box">
+        <h2>My Website Projects</h2>
+        <input type="text" id="web-search" placeholder="Search projects..." class="search-input">
+        <ul id="web-suggestions" class="suggestions-list"></ul>
+        <br>
+        <div class="projects-bg">
+        <div class="horizontal-scroll-wrapper">
+        <button class="scroll-btn left">&lt;</button>
+        <div class="projects" id="webProjectsData"></div>
+        <button class="scroll-btn right">&gt;</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- ===== Design Showcase ===== -->
+<section class="section">
+    <div class="content-box alt">
+        <h2>Design Showcase</h2>
+        <input type="text" id="behance-search" placeholder="Search designs..." class="search-input">
+        <ul id="behance-suggestions" class="suggestions-list"></ul>
+        <br>
+        <div class="projects-bg">
+        <div class="horizontal-scroll-wrapper">
+        <button class="scroll-btn left">&lt;</button>
+        <div class="projects" id="behanceProjects">
+        </div>
+        <button class="scroll-btn right">&gt;</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="contact-section">
+<div class="contact-container">
+    <h2>Have a project in mind?</h2>
+    <p class="subtitle">Let’s build something meaningful together.</p>
+    <p class="small-text">
+        I'm open to freelance, collaborations, and full-time opportunities.
+    </p>
+<div class="contact-panel">
+
+    <!-- EMAIL -->
+    <div class="contact-item">
+        <button class="contact-btn email toggle-btn">📧 Connect via Mail</button>
+
+        <div class="expand-content email-form">
+            <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PHONE -->
+    <div class="contact-item">
+        <button class="contact-btn phone toggle-btn">📞 Connect via Phone</button>
+
+        <div style="background-color: white;"class="expand-content phone-list">
+            <p>📱 +977-XXXXXXXXXX</p>
+            <p>☎️ +977-XXXXXXXXXX</p>
+        </div>
+    </div>
+
+    <!-- LINKEDIN -->
+    <a href="https://linkedin.com/in/YOUR_PROFILE"
+       target="_blank"
+       class="contact-btn linkedin">
+       💼 Connect via LinkedIn
+    </a>
+
+    <!-- CV -->
+    <a href="https://doc-04-5g-apps-viewer.googleusercontent.com/viewer/secure/pdf/hf1jrpa5nv1jr99m0iqvlu8o02s1rrr4/1qiq4i1h4hv920gvll2jm067drcnhudf/1769855100000/gmail/15755259008404119808/ACFrOgCj38Xx_JT7nMe15FAd8eqLCYk4nTbXHLd20drpxGhysvVBiLYKiHLrzdBkQf6oobYdHHNb12Q8ryE-CRlhWrSlNMd35ZYv6cLydgRyblyDb7BtewIfnOKP8tSefWADsf41dq17iM4HevbtwWIY8HqPixG2Z27qUN0omQ==?print=true"
+       target="_blank"
+       class="contact-btn cv">
+       📄 View My CV
+    </a>
+
+</div>
+
+</div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <p class="footer-name">Avishek Bista</p>
+    <p class="footer-role">Web Developer & UI/UX Designer</p>
+    <div class="footer-socials">
+        <a href="#">🌐</a>
+        <a href="#">🐙</a>
+        <a href="#">🎨</a>
+    </div>
+    <p class="copyright">© 2026 All rights reserved.</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
