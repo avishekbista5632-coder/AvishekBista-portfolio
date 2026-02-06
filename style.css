@@ -466,7 +466,10 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     padding: 20px 0;           /* optional vertical padding */
     margin: 0 -30px;           /* stretch horizontally to edges of content-box padding */
 }
-
+.buttons a.btn {
+    display: inline-flex;
+    align-items: center;
+}
 /* Ensure horizontal scroll works normally */
 .projects-bg .horizontal-scroll-wrapper {
     max-width: 100%;
