@@ -423,13 +423,13 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     transition: all 0.3s;
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
+
 .btn .icon {
+    display: inline-flex !important;
     width: 18px;
     height: 18px;
     object-fit: contain;
-    display: inline-block;
 }
-
 /* Live button style */
 .btn.live {
     background: #28a745; /* Green */
