@@ -72,7 +72,8 @@ if (webProjectsContainer) {
                         🚀 Live
                     </a>
                     <a href="${project.github}" target="_blank" class="btn github">
-                        🐙 GitHub
+                        <img src="assets/images/2026-02-06(1).png" alt="GitHub" class="icon">
+                        GitHub
                     </a>
                 </div>
             </div>
@@ -95,9 +96,10 @@ if (behanceContainer) {
                 <h3>${project.title}</h3>
                 <p>${project.desc}</p>
                 <div class="buttons">
-                    <a href="${project.behance}" target="_blank" class="btn behance">
-                        🎨 Behance
-                    </a>
+                <a href="${project.behance}" target="_blank" class="btn behance">
+                    <img src="assets/images/2026-02-06.png" alt="Behance" class="icon">
+                    Behance
+                </a>
                 </div>
             </div>
         `;
