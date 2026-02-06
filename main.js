@@ -31,7 +31,7 @@ const behanceProjectsData = [
     {
         title: "Portfolio Design",
         desc: "• Wireframe • UI",
-        image: "https://picsum.photos/400/250?4",
+        image: "assets/images/portfolio.png",
         behance: "https://www.behance.net/gallery/243055057/portfolio-design"
     },
     {
