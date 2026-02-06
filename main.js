@@ -29,22 +29,28 @@ const webProjectsData = [
 ];
 const behanceProjectsData = [
     {
-        title: "E-Commerce UI",
-        desc: "UX Research • Wireframe • UI",
+        title: "Portfolio Design",
+        desc: "• Wireframe • UI",
         image: "https://picsum.photos/400/250?4",
         behance: "https://www.behance.net/gallery/243055057/portfolio-design"
     },
     {
-        title: "Mobile App UI",
-        desc: "Clean and minimal app interface",
+        title: "AD for a drink",
+        desc: "Adverstisement for a can product, animation",
         image: "https://picsum.photos/400/250?5",
-        behance: "#"
+        behance: "https://www.behance.net/gallery/231193459/AD-for-a-drink"
     },
     {
-        title: "Dashboard UI",
-        desc: "Analytics focused admin dashboard",
+        title: "UI for opening an app",
+        desc: "Animation for opening a app",
         image: "https://picsum.photos/400/250?6",
-        behance: "#"
+        behance: "https://www.behance.net/gallery/231185009/opening-for-a-app"
+    },
+    {
+        title: "Interactive menu and automatic carousel",
+        desc: "This is a design for an interactive menu and automatic carousel",
+        image: "https://picsum.photos/400/250?6",
+        behance: "https://www.behance.net/gallery/231341921/interactive-menu-bar-and-automated-image-carousel"
     }
 ];
 
