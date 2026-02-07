@@ -16,7 +16,7 @@ const webProjectsData = [
         date: "2026-02-07",
         live: "https://avishekbista5632-coder.github.io/portfolio_showcase/",
         github: "https://github.com/avishekbista5632-coder/portfolio_showcase"
-    }
+    },
     {
         title: "Flask To-Do App",
         desc: "CRUD app using Flask & SQLite",
