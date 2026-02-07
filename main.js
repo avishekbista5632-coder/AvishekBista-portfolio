@@ -37,7 +37,7 @@ const behanceProjectsData = [
     {
         title: "AD for a drink",
         desc: "Adverstisement for a can product, animation",
-        image: "assets/images/realadthumbnail.png",
+        image: "assets/images/realadthumbnail.jpg",
         behance: "https://www.behance.net/gallery/231193459/AD-for-a-drink"
     },
     {
