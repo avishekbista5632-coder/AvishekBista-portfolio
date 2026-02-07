@@ -9,6 +9,15 @@ const webProjectsData = [
         github: "#"
     },
     {
+        title: "Personal Portfolio Website",
+        desc: "Modern responsive portfolio showcasing my web development and UI/UX projects with interactive UI, live weather, and smooth horizontal scrolling.",
+        image: "assets/images/portfoliothumbnail.png",
+        tech: ["html", "css", "javascript"],
+        date: "2026-02-07",
+        live: "https://avishekbista5632-coder.github.io/portfolio_showcase/",
+        github: "https://github.com/avishekbista5632-coder/portfolio_showcase"
+    }
+    {
         title: "Flask To-Do App",
         desc: "CRUD app using Flask & SQLite",
         image: "https://picsum.photos/400/250?2",
