@@ -43,7 +43,7 @@ const behanceProjectsData = [
     {
         title: "UI for opening an app",
         desc: "Animation for opening a app",
-        image: "https://picsum.photos/400/250?6",
+        image: "assets/images/appopeningthumbnail.png",
         behance: "https://www.behance.net/gallery/231185009/opening-for-a-app"
     },
     {
