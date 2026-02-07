@@ -2,10 +2,10 @@ const webProjectsData = [
     {
         title: "E-Commerce Website",
         desc: "Django based full-stack store with cart & checkouts",
-        image: "https://picsum.photos/400/250?1",
+        image: "assets/images/djangoecommercethumbnail.png",
         tech: ["python", "django"],
-        date: "2025-01-12",
-        live: "#",
+        date: "2026-02-07",
+        live: "https://avishekbista.pythonanywhere.com/",
         github: "#"
     },
     {
@@ -18,13 +18,13 @@ const webProjectsData = [
         github: "#"
     },
     {
-        title: "PHP Blog",
-        desc: "Multi-page blog system",
-        image: "https://picsum.photos/400/250?3",
-        tech: ["php", "mysql"],
-        date: "2024-06-10",
-        live: "#",
-        github: "#"
+        title: "slider-project",
+        desc: "Simple automated carousel for projects",
+        image: "assets/images/sliderprojectthumbnail.png",
+        tech: ["Frontend(HTML,CSS and JS)"],
+        date: "2026-02-07",
+        live: "https://avishekbista5632-coder.github.io/slider-project/",
+        github: "https://github.com/avishekbista5632-coder/slider-project"
     }
 ];
 const behanceProjectsData = [
