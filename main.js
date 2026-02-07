@@ -49,7 +49,7 @@ const behanceProjectsData = [
     {
         title: "Interactive menu and automatic carousel",
         desc: "This is a design for an interactive menu and automatic carousel",
-        image: "https://picsum.photos/400/250?6",
+        image: "assets/images/d.png",
         behance: "https://www.behance.net/gallery/231341921/interactive-menu-bar-and-automated-image-carousel"
     }
 ];
