@@ -441,7 +441,15 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     transform: translateY(-2px);
 }
 
-/* GitHub button style */
+.btn.linkedin {
+    background: #0a66c2; /* LinkedIn blue */
+    color: #fff;
+}
+
+.btn.linkedin:hover {
+    background: #084c91;
+    transform: translateY(-2px);
+}
 .btn.github {
     background: #24292f; /* GitHub dark gray */
     color: #fff;
@@ -452,7 +460,7 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     transform: translateY(-2px);
 }
 .btn.behance {
-    background: #678cb9; /* GitHub dark gray */
+    background: #678cb9; 
     color: #fff;
 }
 
