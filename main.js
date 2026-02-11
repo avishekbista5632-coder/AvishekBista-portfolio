@@ -6,7 +6,7 @@ const webProjectsData = [
         tech: ["python", "django"],
         date: "2026-02-07",
         live: "https://avishekbista.pythonanywhere.com/",
-        github: "#"
+        github: "https://github.com/avishekbista5632-coder/smile_site_E-Commerce_platform-"
     },
     {
         title: "Personal Portfolio Website",
