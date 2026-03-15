@@ -20,7 +20,7 @@ const webProjectsData = [
     {
         title: "Recipe App",
         desc: "recipe app using Flask & SQLite",
-        image: "https://picsum.photos/400/250?2",
+        image: "assets/images/.png",
         tech: ["python", "flask"],
         date: "2026-03-15",
         live: "https://recipemanagerapp-kk3o.onrender.com/",
