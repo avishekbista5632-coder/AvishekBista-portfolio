@@ -18,13 +18,13 @@ const webProjectsData = [
         github: "https://github.com/avishekbista5632-coder/portfolio_showcase"
     },
     {
-        title: "Flask To-Do App",
-        desc: "CRUD app using Flask & SQLite",
+        title: "Recipe App",
+        desc: "recipe app using Flask & SQLite",
         image: "https://picsum.photos/400/250?2",
         tech: ["python", "flask"],
-        date: "2024-12-01",
+        date: "2026-03-15",
         live: "https://recipemanagerapp-kk3o.onrender.com/",
-        github: "#"
+        github: "https://github.com/avishekbista5632-coder/RecipeManagerApp"
     },
     {
         title: "Flask To-Do App",
