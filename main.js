@@ -23,6 +23,15 @@ const webProjectsData = [
         image: "https://picsum.photos/400/250?2",
         tech: ["python", "flask"],
         date: "2024-12-01",
+        live: "https://recipemanagerapp-kk3o.onrender.com/",
+        github: "#"
+    },
+    {
+        title: "Flask To-Do App",
+        desc: "CRUD app using Flask & SQLite",
+        image: "https://picsum.photos/400/250?2",
+        tech: ["python", "flask"],
+        date: "2024-12-01",
         live: "#",
         github: "#"
     },
