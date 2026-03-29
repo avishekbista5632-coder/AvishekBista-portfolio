@@ -8,6 +8,15 @@ const webProjectsData = [
         live: "https://avishekbista.pythonanywhere.com/",
         github: "https://github.com/avishekbista5632-coder/smile_site_E-Commerce_platform-"
     },
+        {
+        title: "To Do Website",
+        desc: "TO DO App.",
+        image: "assets/images/todo.png",
+        tech: ["html", "css", "javascript"],
+        date: "2026-03-29",
+        live: "https://todo-webapp-mcnv.onrender.com/",
+        github: "https://github.com/avishekbista5632-coder/todo_webapp"
+    },
     {
         title: "Personal Portfolio Website",
         desc: "Modern responsive portfolio showcasing my web development and UI/UX projects with interactive UI, live weather, and smooth horizontal scrolling.",
