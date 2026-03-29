@@ -36,8 +36,8 @@ const webProjectsData = [
         github: "https://github.com/avishekbista5632-coder/RecipeManagerApp"
     },
     {
-        title: "Flask To-Do App",
-        desc: "CRUD app using Flask & SQLite",
+        title: "Weather Dashboard",
+        desc: "Weather Dashboard using flask and python",
         image: "https://picsum.photos/400/250?2",
         tech: ["python", "flask"],
         date: "2024-12-01",
