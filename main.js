@@ -41,8 +41,8 @@ const webProjectsData = [
         image: "assets/images/.png",
         tech: ["python", "flask"],
         date: "2024-12-01",
-        live: "#",
-        github: "#"
+        live: "https://weather-dashboard-8iit.onrender.com/",
+        github: "https://github.com/avishekbista5632-coder/weather_dashboard "
     },
     {
         title: "slider-project",
