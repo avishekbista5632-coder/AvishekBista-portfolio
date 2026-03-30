@@ -38,7 +38,7 @@ const webProjectsData = [
     {
         title: "Weather Dashboard",
         desc: "Weather Dashboard using flask and python",
-        image: "assets/images/.png",
+        image: "assets/images/Screenshot 2026-03-30 141234.png",
         tech: ["python", "flask"],
         date: "2024-12-01",
         live: "https://weather-dashboard-8iit.onrender.com/",
