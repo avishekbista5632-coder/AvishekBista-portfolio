@@ -61,6 +61,12 @@ const behanceProjectsData = [
         image: "assets/images/portfolio.png",
         behance: "https://www.behance.net/gallery/243055057/portfolio-design"
     },
+        {
+        title: "Poster Design",
+        desc: "• Graphic Design • Photoshop",
+        image: "assets/images/poster.png",
+        behance: "https://www.behance.net/gallery/247400607/Poster-Design"
+    },
     {
         title: "AD for a drink",
         desc: "Adverstisement for a can product, animation",
