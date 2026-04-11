@@ -64,7 +64,7 @@ const behanceProjectsData = [
         {
         title: "Poster Design",
         desc: "• Graphic Design • Photoshop",
-        image: "assets/images/poster.png",
+        image: "assets/images/Poster.png",
         behance: "https://www.behance.net/gallery/247400607/Poster-Design"
     },
     {
