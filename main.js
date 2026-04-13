@@ -11,7 +11,7 @@ const webProjectsData = [
         {
         title: "To Do Website",
         desc: "TO DO App.",
-        image: "assets/images/todo.png",
+        image: "assets/images/todolist.jpg",
         tech: ["html", "css", "javascript"],
         date: "2026-03-29",
         live: "https://todo-webapp-mcnv.onrender.com/",
