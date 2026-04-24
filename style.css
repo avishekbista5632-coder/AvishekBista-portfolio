@@ -175,13 +175,20 @@ body {
 .project-card {
     background: #fff;
     position: relative;
-    border-radius: 15px;
     overflow: hidden;
+    border-radius: 15px;
     box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+
+    flex: 0 0 auto;
+    width: 280px;
 }
 
 
-.project-card img { width: 100%; display: block; }
+.project-card img {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
 
 .overlay {
     position: absolute;
@@ -189,19 +196,30 @@ body {
     background: rgba(0,0,0,0.7);
     color: #fff;
     opacity: 0;
-    transition: 0.3s;
+    transition: opacity 0.3s ease;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    z-index: 2;
      pointer-events: none;
 }
+
 .project-card:hover .overlay {
-    pointer-events: auto;
+    opacity: 1;
 }
-#graphicGallery img {
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+
+    position: relative;
+    z-index: 5;
+}
+#graphicGallery .project-card {
     cursor: pointer;
 }
 
@@ -370,11 +388,7 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     padding: 10px 0;
 }
 
-/* Prevent the container from stretching */
-.project-card {
-    flex: 0 0 auto; /* FIX: don’t shrink or grow, keep fixed width */
-    width: 280px;   /* size of one project card */
-}
+
 
 /* Hide scrollbars */
 .horizontal-scroll-wrapper .projects::-webkit-scrollbar {
@@ -404,12 +418,7 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
 .scroll-btn.right { right: 0; }
 
 .scroll-btn:hover { background: rgba(0,0,0,0.9); }
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 12px;
-}
+
 
 .btn {
     display: flex;
@@ -633,3 +642,13 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     cursor: pointer;
 }
 
+/* FIX GRAPHIC IMAGE CLICK */
+#graphicGallery .overlay {
+    pointer-events: none;
+}
+
+#graphicGallery img {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
