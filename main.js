@@ -122,17 +122,19 @@ const modal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 const closeModal = document.querySelector(".close-modal");
 
-// event delegation (important for dynamic cards)
 document.addEventListener("click", (e) => {
     const img = e.target.closest("#graphicGallery img");
 
-    if (img && img.dataset.full) {
+    if (!img) return;
+
+    const fullImage = img.getAttribute("data-full");
+
+    if (fullImage) {
         modal.classList.add("active");
-        modalImage.src = img.dataset.full;
+        modalImage.src = fullImage;
         document.body.style.overflow = "hidden";
     }
 });
-
 // close
 closeModal.addEventListener("click", () => {
     modal.classList.remove("active");
