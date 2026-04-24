@@ -201,6 +201,7 @@ body {
 
 .project-card:hover .overlay {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .buttons a {
