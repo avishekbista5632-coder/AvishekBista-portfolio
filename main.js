@@ -156,35 +156,7 @@ if (behanceContainer) {
         behanceContainer.appendChild(card);
     });
 }
-const graphicContainer = document.getElementById("graphicGallery");
 
-graphicDesignData.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "project-card";
-
-    card.innerHTML = `
-        <img src="${item.image}" alt="${item.title}" data-full="${item.full}">
-        <div class="overlay">
-            <h3>${item.title}</h3>
-        </div>
-    `;
-
-    graphicContainer.appendChild(card);
-});
-const modal = document.getElementById("imageModal");
-const modalImage = document.getElementById("modalImage");
-const closeModal = document.querySelector(".close-modal");
-
-// event delegation (important for dynamic cards)
-document.addEventListener("click", (e) => {
-    const img = e.target.closest(".project-card img");
-
-    if (img && img.dataset.full) {
-        modal.classList.add("active");
-        modalImage.src = img.dataset.full;
-        document.body.style.overflow = "hidden";
-    }
-});
 
 // close
 closeModal.addEventListener("click", () => {
