@@ -185,6 +185,8 @@ body {
     aspect-ratio: 16 / 10;
     object-fit: cover;
     display: block;
+    vertical-align: top;
+}
 }
 
 .overlay {
