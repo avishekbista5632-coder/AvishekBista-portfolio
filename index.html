@@ -83,21 +83,24 @@
     </div>
     </div>
 </section>
-<!-- ===== graphic Design Showcase ===== -->
+
+<!-- ===== Graphic Design Showcase ===== -->
 <section class="section">
     <div class="content-box alt">
         <h2>Graphic Design Showcase</h2>
-        <input type="text" id="behance-search" placeholder="Search designs..." class="search-input">
-        <ul id="behance-suggestions" class="suggestions-list"></ul>
-        <br>
+
         <div class="projects-bg">
-        <div class="horizontal-scroll-wrapper">
-        <button class="scroll-btn left">&lt;</button>
-        <div class="projects" id="behanceProjects">
+            <div class="horizontal-scroll-wrapper">
+
+                <button class="scroll-btn left">&lt;</button>
+
+                <!-- THIS is now gallery container -->
+                <div class="projects" id="graphicGallery"></div>
+
+                <button class="scroll-btn right">&gt;</button>
+
+            </div>
         </div>
-        <button class="scroll-btn right">&gt;</button>
-        </div>
-    </div>
     </div>
 </section>
 <!-- ===== Contact ===== -->
@@ -169,6 +172,11 @@
     </div>
     <p class="copyright">© 2026 All rights reserved.</p>
 </footer>
+    <!-- Modal (put once at bottom of body) -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img id="modalImage" class="modal-image">
+</div>
 <script src="main.js"></script>
 </body>
 </html>
