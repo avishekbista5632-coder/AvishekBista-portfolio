@@ -86,23 +86,70 @@ const behanceProjectsData = [
         behance: "https://www.behance.net/gallery/231341921/interactive-menu-bar-and-automated-image-carousel"
     }
 ];
-// const graphicDesignData = [
-//     {
-//         title: "Poster Design",
-//         image: "assets/images/Poster.png",
-//         full: "assets/images/Poster-large.png"
-//     },
-//     {
-//         title: "Portfolio Design",
-//         image: "assets/images/portfolio.png",
-//         full: "assets/images/portfolio-large.png"
-//     },
-//     {
-//         title: "AD Design",
-//         image: "assets/images/realadthumbnail.jpg",
-//         full: "assets/images/realadlarge.jpg"
-//     }
-// ];
+const graphicDesignData = [
+    {
+        title: "Poster Design",
+        image: "assets/images/Poster.png",
+        full: "assets/images/Poster-large.png"
+    },
+    {
+        title: "Portfolio Design",
+        image: "assets/images/portfolio.png",
+        full: "assets/images/portfolio-large.png"
+    },
+    {
+        title: "AD Design",
+        image: "assets/images/realadthumbnail.jpg",
+        full: "assets/images/realadlarge.jpg"
+    }
+];
+const graphicContainer = document.getElementById("graphicGallery");
+
+graphicDesignData.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "project-card";
+
+    card.innerHTML = `
+        <img src="${item.image}" alt="${item.title}" data-full="${item.full}">
+        <div class="overlay">
+            <h3>${item.title}</h3>
+        </div>
+    `;
+
+    graphicContainer.appendChild(card);
+});
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeModal = document.querySelector(".close-modal");
+
+// event delegation (important for dynamic cards)
+document.addEventListener("click", (e) => {
+    const img = e.target.closest(".project-card img");
+
+    if (img && img.dataset.full) {
+        modal.classList.add("active");
+        modalImage.src = img.dataset.full;
+        document.body.style.overflow = "hidden";
+    }
+});
+
+// close
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("active");
+    document.body.style.overflow = "auto";
+});
+
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+    }
+});
+
+
+
+
+
 // ===== RENDER WEB PROJECTS =====
 const webProjectsContainer = document.getElementById("webProjectsData");
 
