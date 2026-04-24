@@ -198,10 +198,11 @@ body {
 
      pointer-events: none;
 }
-
 .project-card:hover .overlay {
-    opacity: 1;
     pointer-events: auto;
+}
+#graphicGallery img {
+    cursor: pointer;
 }
 
 .buttons a {
