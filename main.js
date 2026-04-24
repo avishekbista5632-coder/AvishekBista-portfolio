@@ -92,15 +92,10 @@ const graphicDesignData = [
         image: "assets/images/Poster.png",
         full: "assets/images/Poster-large.png"
     },
-    {
-        title: "Portfolio Design",
-        image: "assets/images/portfolio.png",
-        full: "assets/images/portfolio-large.png"
-    },
-    {
-        title: "AD Design",
-        image: "assets/images/realadthumbnail.jpg",
-        full: "assets/images/realadlarge.jpg"
+        {
+        title: "Travel Advertisement Design",
+        image: "assets/images/Travel1.png",
+        full: "assets/images/Travel1-large.png"
     }
 ];
 const graphicContainer = document.getElementById("graphicGallery");
