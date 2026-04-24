@@ -180,14 +180,8 @@ body {
     box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
-.project-card img {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    display: block;
-    vertical-align: top;
-}
-}
+
+.project-card img { width: 100%; display: block; }
 
 .overlay {
     position: absolute;
