@@ -597,3 +597,34 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     display: block;
     margin-bottom: 8px;
 }
+.image-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 40px;
+}
+
+.image-modal.active {
+    display: flex;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+.close-modal {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 42px;
+    color: white;
+    cursor: pointer;
+}
