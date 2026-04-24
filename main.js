@@ -124,7 +124,7 @@ const closeModal = document.querySelector(".close-modal");
 
 // event delegation (important for dynamic cards)
 document.addEventListener("click", (e) => {
-    const img = e.target.closest(".project-card img");
+    const img = e.target.closest("#graphicGallery img");
 
     if (img && img.dataset.full) {
         modal.classList.add("active");
