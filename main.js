@@ -111,7 +111,7 @@ if (webProjectsContainer) {
         const card = document.createElement("div");
         card.className = "project-card";
 
-        card.innerHTML = 
+        card.innerHTML =  `
             <img src="${project.image}" alt="${project.title}">
             <div class="overlay">
                 <h3>${project.title}</h3>
@@ -126,7 +126,7 @@ if (webProjectsContainer) {
                     </a>
                 </div>
             </div>
-        ;
+        `;
 
         webProjectsContainer.appendChild(card);
     });
@@ -139,7 +139,7 @@ if (behanceContainer) {
         const card = document.createElement("div");
         card.className = "project-card";
 
-        card.innerHTML = 
+        card.innerHTML = `
             <img src="${project.image}" alt="${project.title}">
             <div class="overlay">
                 <h3>${project.title}</h3>
@@ -151,7 +151,7 @@ if (behanceContainer) {
                 </a>
                 </div>
             </div>
-        ;
+        `;
 
         behanceContainer.appendChild(card);
     });
