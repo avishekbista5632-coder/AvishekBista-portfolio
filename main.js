@@ -86,23 +86,23 @@ const behanceProjectsData = [
         behance: "https://www.behance.net/gallery/231341921/interactive-menu-bar-and-automated-image-carousel"
     }
 ];
-const graphicDesignData = [
-    {
-        title: "Poster Design",
-        image: "assets/images/Poster.png",
-        full: "assets/images/Poster-large.png"
-    },
-    {
-        title: "Portfolio Design",
-        image: "assets/images/portfolio.png",
-        full: "assets/images/portfolio-large.png"
-    },
-    {
-        title: "AD Design",
-        image: "assets/images/realadthumbnail.jpg",
-        full: "assets/images/realadlarge.jpg"
-    }
-];
+// const graphicDesignData = [
+//     {
+//         title: "Poster Design",
+//         image: "assets/images/Poster.png",
+//         full: "assets/images/Poster-large.png"
+//     },
+//     {
+//         title: "Portfolio Design",
+//         image: "assets/images/portfolio.png",
+//         full: "assets/images/portfolio-large.png"
+//     },
+//     {
+//         title: "AD Design",
+//         image: "assets/images/realadthumbnail.jpg",
+//         full: "assets/images/realadlarge.jpg"
+//     }
+// ];
 // ===== RENDER WEB PROJECTS =====
 const webProjectsContainer = document.getElementById("webProjectsData");
 
@@ -111,7 +111,7 @@ if (webProjectsContainer) {
         const card = document.createElement("div");
         card.className = "project-card";
 
-        card.innerHTML = `
+        card.innerHTML = 
             <img src="${project.image}" alt="${project.title}">
             <div class="overlay">
                 <h3>${project.title}</h3>
@@ -126,7 +126,7 @@ if (webProjectsContainer) {
                     </a>
                 </div>
             </div>
-        `;
+        ;
 
         webProjectsContainer.appendChild(card);
     });
@@ -139,7 +139,7 @@ if (behanceContainer) {
         const card = document.createElement("div");
         card.className = "project-card";
 
-        card.innerHTML = `
+        card.innerHTML = 
             <img src="${project.image}" alt="${project.title}">
             <div class="overlay">
                 <h3>${project.title}</h3>
@@ -151,25 +151,14 @@ if (behanceContainer) {
                 </a>
                 </div>
             </div>
-        `;
+        ;
 
         behanceContainer.appendChild(card);
     });
 }
 
 
-// close
-closeModal.addEventListener("click", () => {
-    modal.classList.remove("active");
-    document.body.style.overflow = "auto";
-});
 
-modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.classList.remove("active");
-        document.body.style.overflow = "auto";
-    }
-});
 // ===== LIVE SEARCH FUNCTION =====
 function setupLiveSearch(inputId, suggestionsId, projectsArray, renderContainerId) {
     const input = document.getElementById(inputId);
