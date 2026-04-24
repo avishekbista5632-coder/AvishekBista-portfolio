@@ -181,11 +181,10 @@ body {
 }
 
 
-
 .project-card img {
     width: 100%;
-    height: 220px;       /* fixed thumbnail height */
-    object-fit: cover;   /* crops image to fit nicely */
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
     display: block;
 }
 
