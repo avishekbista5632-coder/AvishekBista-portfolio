@@ -95,7 +95,7 @@ const graphicDesignData = [
         {
         title: "Travel Advertisement Design",
         image: "assets/images/Travel1.png",
-        full: "assets/images/Travel1-large.png"
+        full: "assets/images/Travel1-large.jpg"
     }
 ];
 const graphicContainer = document.getElementById("graphicGallery");
