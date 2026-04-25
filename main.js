@@ -117,7 +117,7 @@ const graphicDesignData = [
         full: [
             "assets/images/t1.png",
             "assets/images/t2.jpg",
-            "assets/imagest3.jpg/"
+            "assets/images/t3.jpg"
         ]
     },
     {
@@ -131,12 +131,12 @@ const graphicDesignData = [
         title: "Travel Promotion Poster Design: Vacation Campaign",
         image: "assets/images/airtravelposterthumbnail.png",
         full: [
-            "assets/images/Travel1",
-            "assets/images/Travel2",
-            "assets/images/Travel3",
-            "assets/images/Travel4",
-            "assets/images/Travel4",
-            "assets/images/Travel6"
+            "assets/images/Travel1.jpg",
+            "assets/images/Travel2.jpg",
+            "assets/images/Travel3.jpg",
+            "assets/images/Travel4.jpg",
+            "assets/images/Travel4.jpg",
+            "assets/images/Travel6.jpg"
         ]
     },
     {
