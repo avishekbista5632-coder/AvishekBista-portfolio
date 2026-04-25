@@ -135,7 +135,7 @@ const graphicDesignData = [
             "assets/images/Travel2.jpg",
             "assets/images/Travel3.jpg",
             "assets/images/Travel4.jpg",
-            "assets/images/Travel4.jpg",
+            "assets/images/Travel5.jpg",
             "assets/images/Travel6.jpg"
         ]
     },
