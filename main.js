@@ -90,27 +90,34 @@ const graphicDesignData = [
     {
         title: "Poster Design",
         image: "assets/images/Poster.png",
-        full: "assets/images/Poster-large.png"
+        full: [
+            "assets/images/Poster-large.png"
+        ]
     },
-        {
+    {
         title: "Travel Advertisement Design",
         image: "assets/images/Travel1.png",
-        full: "assets/images/Travel1-large.jpg"
+        full: [
+            "assets/images/Travel1-large.jpg"
+        ]
     },
-            {
+    {
         title: "Shadow and reflection display Design",
         image: "assets/images/milkcontainer-orange.png",
-        full: "assets/images/orangePS.png",full: "assets/images/milkcontainerPS.png"
+        full: [
+            "assets/images/orangePS.png",
+            "assets/images/milkcontainerPS.png"
+        ]
     }
 ];
 const graphicContainer = document.getElementById("graphicGallery");
 
-graphicDesignData.forEach(item => {
+graphicDesignData.forEach((item, index) => {
     const card = document.createElement("div");
     card.className = "project-card";
 
     card.innerHTML = `
-        <img src="${item.image}" alt="${item.title}" data-full="${item.full}">
+        <img src="${item.image}" alt="${item.title}" data-index="${index}">
         <div class="overlay">
             <h3>${item.title}</h3>
         </div>
@@ -127,13 +134,27 @@ document.addEventListener("click", (e) => {
 
     if (!img) return;
 
-    const fullImage = img.getAttribute("data-full");
+    const index = img.dataset.index;
+    const item = graphicDesignData[index];
 
-    if (fullImage) {
-        modal.classList.add("active");
-        modalImage.src = fullImage;
-        document.body.style.overflow = "hidden";
-    }
+    if (!item.full) return;
+
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+
+    modalImage.parentElement.innerHTML = `
+        <span class="close-modal">&times;</span>
+        <div class="modal-scroll-gallery">
+            ${item.full.map(src => `
+                <img src="${src}" class="modal-gallery-image">
+            `).join("")}
+        </div>
+    `;
+
+    document.querySelector(".close-modal").addEventListener("click", () => {
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+    });
 });
 // close
 closeModal.addEventListener("click", () => {
