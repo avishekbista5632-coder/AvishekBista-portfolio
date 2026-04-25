@@ -96,6 +96,11 @@ const graphicDesignData = [
         title: "Travel Advertisement Design",
         image: "assets/images/Travel1.png",
         full: "assets/images/Travel1-large.jpg"
+    },
+            {
+        title: "Shadow and reflection display Design",
+        image: "assets/images/milkcontainer-orange.png",
+        full: "assets/images/orangePS.png",full: "assets/images/milkcontainerPS.png"
     }
 ];
 const graphicContainer = document.getElementById("graphicGallery");
