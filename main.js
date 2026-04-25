@@ -125,8 +125,9 @@ graphicDesignData.forEach((item, index) => {
 
     graphicContainer.appendChild(card);
 });
+
 const modal = document.getElementById("imageModal");
-const modalImage = document.getElementById("modalImage");
+const modalGallery = document.getElementById("modalGallery");
 const closeModal = document.querySelector(".close-modal");
 
 document.addEventListener("click", (e) => {
@@ -139,37 +140,32 @@ document.addEventListener("click", (e) => {
 
     if (!item.full) return;
 
+    modalGallery.innerHTML = "";
+
+    item.full.forEach(src => {
+        const image = document.createElement("img");
+        image.src = src;
+        image.className = "modal-gallery-image";
+        modalGallery.appendChild(image);
+    });
+
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
-
-    modalImage.parentElement.innerHTML = `
-        <span class="close-modal">&times;</span>
-        <div class="modal-scroll-gallery">
-            ${item.full.map(src => `
-                <img src="${src}" class="modal-gallery-image">
-            `).join("")}
-        </div>
-    `;
-
-    document.querySelector(".close-modal").addEventListener("click", () => {
-        modal.classList.remove("active");
-        document.body.style.overflow = "auto";
-    });
 });
-// close
-closeModal.addEventListener("click", () => {
-    modal.classList.remove("active");
-    document.body.style.overflow = "auto";
-});
+
+closeModal.addEventListener("click", closeModalFunc);
 
 modal.addEventListener("click", (e) => {
     if (e.target === modal) {
-        modal.classList.remove("active");
-        document.body.style.overflow = "auto";
+        closeModalFunc();
     }
 });
 
-
+function closeModalFunc() {
+    modal.classList.remove("active");
+    modalGallery.innerHTML = "";
+    document.body.style.overflow = "auto";
+}
 
 
 
