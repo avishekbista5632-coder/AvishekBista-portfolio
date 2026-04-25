@@ -652,3 +652,18 @@ background: #000; color: #ccc; text-align: center; padding: 20px;
     position: relative;
     z-index: 1;
 }
+.modal-scroll-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.modal-gallery-image {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 16px;
+    object-fit: contain;
+}
