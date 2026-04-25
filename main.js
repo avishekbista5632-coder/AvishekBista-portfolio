@@ -111,6 +111,14 @@ const behanceProjectsData = [
     }
 ];
 const graphicDesignData = [
+        {
+        title: "Travel Promotion Poster",
+        image: "assets/images/greenandblueplanetravelthumbnail.png",
+        full: [
+            "assets/images/",
+            "assets/images/"
+        ]
+    },
     {
         title: "Poster Design",
         image: "assets/images/Poster.png",
@@ -119,15 +127,16 @@ const graphicDesignData = [
         ]
     },
     {
-        title: "Travel Advertisement Design",
-        image: "assets/images/Travel1.png",
+        title: "Travel Promotion Poster Design: Vacation Campaign",
+        image: "assets/images/airtravelposterthumbnail.png",
         full: [
-            "assets/images/Travel1-large.jpg"
+            "assets/images/",
+            "assets/images/"
         ]
     },
     {
         title: "Shadow and reflection display Design",
-        image: "assets/images/milkcontainer-orange.png",
+        image: "assets/images/milkandorangethumbnail.png",
         full: [
             "assets/images/orangePS.png",
             "assets/images/milkcontainerPS.png"
