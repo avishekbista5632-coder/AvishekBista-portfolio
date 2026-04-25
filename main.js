@@ -61,13 +61,7 @@ const behanceProjectsData = [
         image: "assets/images/portfolio.png",
         behance: "https://www.behance.net/gallery/243055057/portfolio-design"
     },
-        {
-        title: "Poster Design",
-        desc: "• Graphic Design • Photoshop",
-        image: "assets/images/Poster.png",
-        behance: "https://www.behance.net/gallery/247400607/Poster-Design"
-    },
-            {
+      {
         title: "HealthConnect",
         desc: "• UI/UX • Booking",
         image: "assets/images/healthconnectthumbnail.png",
@@ -85,11 +79,35 @@ const behanceProjectsData = [
         image: "assets/images/appopeningthumbnail.png",
         behance: "https://www.behance.net/gallery/231185009/opening-for-a-app"
     },
+            {
+        title: "Poster Design",
+        desc: "• Graphic Design • Photoshop",
+        image: "assets/images/Poster.png",
+        behance: "https://www.behance.net/gallery/247400607/Poster-Design"
+    },
+                  {
+        title: "Travel Promotion Poster Design",
+        desc: "• Graphic Design • Photoshop",
+        image: "assets/images/greenandblueplanetravelthumbnail.png",
+        behance: "https://www.behance.net/gallery/247832621/Travel-Promotion-Poster"
+    },
     {
         title: "Interactive menu and automatic carousel",
         desc: "This is a design for an interactive menu and automatic carousel",
         image: "assets/images/d.png",
         behance: "https://www.behance.net/gallery/231341921/interactive-menu-bar-and-automated-image-carousel"
+    },
+                      {
+        title: "Air Travel Poster Design",
+        desc: "• Graphic Design • Photoshop",
+        image: "assets/images/airtravelposterthumbnail.png",
+        behance: "https://www.behance.net/gallery/247812029/Air-Travel-Poster-Design"
+    },
+        {
+        title: "Photoshop design use of shadow and reflection",
+        desc: "This is a design for a object showing refelction and shadow",
+        image: "assets/images/milkandorangethumbnail.png",
+        behance: "https://www.behance.net/gallery/247832485/Shadow-and-Lighting-Design-in-Photoshop"
     }
 ];
 const graphicDesignData = [
