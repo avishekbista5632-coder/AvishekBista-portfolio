@@ -67,6 +67,12 @@ const behanceProjectsData = [
         image: "assets/images/Poster.png",
         behance: "https://www.behance.net/gallery/247400607/Poster-Design"
     },
+            {
+        title: "HealthConnect",
+        desc: "• UI/UX • Booking",
+        image: "assets/images/healthconnectthumbnail.png",
+        behance: "https://www.behance.net/gallery/248129427/Healthcare-Booking-App"
+    },
     {
         title: "AD for a drink",
         desc: "Adverstisement for a can product, animation",
