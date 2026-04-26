@@ -122,6 +122,13 @@ const graphicDesignData = [
     },
     {
         title: "Poster Design",
+        image: "assets/images/biryani.jpg",
+        full: [
+            "assets/images/biryani-large.jpg"
+        ]
+    },
+        {
+        title: "Birynai food advertisement",
         image: "assets/images/Poster.png",
         full: [
             "assets/images/Poster-large.png"
