@@ -390,7 +390,7 @@ setInterval(updateClock, 1000);
 // ===== LOCATION =====
 const locationEl = document.getElementById("location");
 if (locationEl) {
-    locationEl.innerText = "📍 Kathmandu, Nepal";
+    locationEl.innerText = "Kathmandu, Nepal";
 }
 
 // ===== WEATHER =====
