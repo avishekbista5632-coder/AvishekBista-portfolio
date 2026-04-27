@@ -52,6 +52,15 @@ const webProjectsData = [
         date: "2026-02-07",
         live: "https://avishekbista5632-coder.github.io/slider-project/",
         github: "https://github.com/avishekbista5632-coder/slider-project"
+    },
+        {
+        title: "Graphic Design Showcase",
+        desc: "Simple graphic design showcase for projects when clicked expands",
+        image: "assets/images/.png",
+        tech: ["Frontend(HTML,CSS and JS)"],
+        date: "2026-04-27",
+        live: "https://avishekbista5632-coder.github.io/graphic-design-showcase/",
+        github: "https://github.com/avishekbista5632-coder/graphic-design-showcase"
     }
 ];
 const behanceProjectsData = [
