@@ -129,7 +129,7 @@ const graphicDesignData = [
     },
             {
         title: "Chair advertisement",
-        image: "assets/images/",
+        image: "assets/images/chairadthumbnail.jpg",
         full: [
             "assets/images/bluechair.jpg",
              "assets/images/redchair.jpg",
