@@ -122,9 +122,9 @@ const graphicDesignData = [
     },
             {
         title: "Birynai food advertisement",
-        image: "assets/images/Poster.png",
+        image: "assets/images/biryani.jpg",
         full: [
-            "assets/images/Poster-large.png"
+            "assets/images/biryani-large.jpg"
         ]
     },
             {
@@ -138,9 +138,9 @@ const graphicDesignData = [
     },
     {
         title: "Poster Design",
-        image: "assets/images/biryani.jpg",
+        image: "assets/images/Poster.png",
         full: [
-            "assets/images/biryani-large.jpg"
+            "assets/images/Poster-large.png"
         ]
     },
 
