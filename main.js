@@ -115,19 +115,12 @@ const graphicDesignData = [
         title: "Travel Promotion Poster",
         image: "assets/images/greenandblueplanetravelthumbnail.png",
         full: [
-            "assets/images/t1.png",
+            "assets/images/t3.png",
             "assets/images/t2.jpg",
-            "assets/images/t3.jpg"
+            "assets/images/t1.jpg"
         ]
     },
-    {
-        title: "Poster Design",
-        image: "assets/images/biryani.jpg",
-        full: [
-            "assets/images/biryani-large.jpg"
-        ]
-    },
-        {
+            {
         title: "Birynai food advertisement",
         image: "assets/images/Poster.png",
         full: [
@@ -143,6 +136,14 @@ const graphicDesignData = [
              "assets/images/bluechair1.jpg",
         ]
     },
+    {
+        title: "Poster Design",
+        image: "assets/images/biryani.jpg",
+        full: [
+            "assets/images/biryani-large.jpg"
+        ]
+    },
+
     {
         title: "Travel Promotion Poster Design: Vacation Campaign",
         image: "assets/images/airtravelposterthumbnail.png",
