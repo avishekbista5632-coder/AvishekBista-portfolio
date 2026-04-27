@@ -115,9 +115,9 @@ const graphicDesignData = [
         title: "Travel Promotion Poster",
         image: "assets/images/greenandblueplanetravelthumbnail.png",
         full: [
-            "assets/images/t3.png",
+            "assets/images/t3.jpg",
             "assets/images/t2.jpg",
-            "assets/images/t1.jpg"
+            "assets/images/t1.png"
         ]
     },
             {
