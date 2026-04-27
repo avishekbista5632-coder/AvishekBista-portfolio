@@ -134,6 +134,15 @@ const graphicDesignData = [
             "assets/images/Poster-large.png"
         ]
     },
+            {
+        title: "Chair advertisement",
+        image: "assets/images/",
+        full: [
+            "assets/images/bluechair.jpg",
+             "assets/images/redchair.jpg",
+             "assets/images/bluechair1.jpg",
+        ]
+    },
     {
         title: "Travel Promotion Poster Design: Vacation Campaign",
         image: "assets/images/airtravelposterthumbnail.png",
